@@ -118,6 +118,12 @@ class NewsListViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     func getNews() {
+        
+        let activityIndicator = UIActivityIndicatorView(style: .gray)
+        view.addSubview(activityIndicator)
+        activityIndicator.center = CGPoint(x: view.frame.size.width*0.5, y: view.frame.size.height*0.5)
+        activityIndicator.startAnimating()
+        
         showAllDataNews = []
         AF.request("https://newsapi.org/v2/top-headlines?country=us&apiKey=da5b3fc7f0c94bf8a872b8e90195df8f&category=" + UserDefaults.standard.string(forKey: "category")! , method: .get ,encoding: JSONEncoding.default).responseString {
         response in switch response.result {
@@ -142,6 +148,9 @@ class NewsListViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                 }
             }
             self.tableView.reloadData()
+            
+            activityIndicator.stopAnimating()
+            activityIndicator.removeFromSuperview()
         case .failure(let error):
             print(error)
             }
