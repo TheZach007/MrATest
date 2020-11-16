@@ -18,6 +18,7 @@
 		E3FFC2F125621EF900E40AB1 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FFC2F025621EF900E40AB1 /* NewsListViewController.swift */; };
 		E3FFC2F425621F2C00E40AB1 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FFC2F325621F2C00E40AB1 /* News.swift */; };
 		E3FFC2F825621F5700E40AB1 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FFC2F725621F5700E40AB1 /* NewsTableViewCell.swift */; };
+		E3FFC2FF256238A700E40AB1 /* Documentation.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E3FFC2FE256238A700E40AB1 /* Documentation.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E3FFC2F025621EF900E40AB1 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
 		E3FFC2F325621F2C00E40AB1 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		E3FFC2F725621F5700E40AB1 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		E3FFC2FE256238A700E40AB1 /* Documentation.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Documentation.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				E3FFC2CF25620E9900E40AB1 /* SceneDelegate.swift */,
 				E3FFC2D625620E9C00E40AB1 /* Assets.xcassets */,
 				E3FFC2DB25620E9C00E40AB1 /* Info.plist */,
+				E3FFC2FE256238A700E40AB1 /* Documentation.rtf */,
 			);
 			path = MrATest;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3FFC2DA25620E9C00E40AB1 /* LaunchScreen.storyboard in Resources */,
+				E3FFC2FF256238A700E40AB1 /* Documentation.rtf in Resources */,
 				E3FFC2D725620E9C00E40AB1 /* Assets.xcassets in Resources */,
 				E3FFC2D525620E9900E40AB1 /* Main.storyboard in Resources */,
 			);
