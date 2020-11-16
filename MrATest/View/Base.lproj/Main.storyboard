@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DashboardViewController" customModule="MrATest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose category here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xJb-Yg-c1w">
+                                <rect key="frame" x="63" y="211" width="288" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.5" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="F20-2Y-bFC"/>
+                                    <constraint firstAttribute="width" secondItem="xJb-Yg-c1w" secondAttribute="height" multiplier="144:17" id="o3g-hy-nrf"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="categoryEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="bqO-KZ-xCx"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is News App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSQ-bL-t68">
+                                <rect key="frame" x="20" y="94" width="374" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nSQ-bL-t68" secondAttribute="height" multiplier="187:18" id="vv1-yt-nFn"/>
+                                    <constraint firstAttribute="height" constant="36" id="xkC-G6-rvm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are you looking for?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NT-Zz-BcN">
+                                <rect key="frame" x="20" y="160" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBz-3R-GKq">
+                                <rect key="frame" x="70" y="754" width="274" height="48"/>
+                                <color key="backgroundColor" red="0.0" green="0.49803921569999998" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YBz-3R-GKq" secondAttribute="height" multiplier="137:24" id="4Il-Ko-qeC"/>
+                                    <constraint firstAttribute="height" constant="48" id="zMP-g9-nfp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Find"/>
+                                <connections>
+                                    <action selector="findAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Yf-Cs-hPM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9NT-Zz-BcN" firstAttribute="leading" secondItem="nSQ-bL-t68" secondAttribute="leading" id="0ZX-QY-tie"/>
+                            <constraint firstItem="nSQ-bL-t68" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9zA-Ss-e2r"/>
+                            <constraint firstItem="9NT-Zz-BcN" firstAttribute="trailing" secondItem="nSQ-bL-t68" secondAttribute="trailing" id="A9x-yR-dCh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YBz-3R-GKq" secondAttribute="bottom" constant="60" id="CwS-pS-ddh"/>
+                            <constraint firstItem="xJb-Yg-c1w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EOQ-hY-GOU"/>
+                            <constraint firstItem="YBz-3R-GKq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ESV-B7-HNU"/>
+                            <constraint firstItem="xJb-Yg-c1w" firstAttribute="top" secondItem="9NT-Zz-BcN" secondAttribute="bottom" constant="30" id="Mk5-Xl-dCL"/>
+                            <constraint firstItem="nSQ-bL-t68" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="XqK-F9-nEs"/>
+                            <constraint firstItem="9NT-Zz-BcN" firstAttribute="top" secondItem="nSQ-bL-t68" secondAttribute="bottom" constant="30" id="aoG-Zj-5sF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="categoryField" destination="xJb-Yg-c1w" id="FJr-pL-gku"/>
+                        <outlet property="findButton" destination="YBz-3R-GKq" id="bmz-Bt-L8L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="119"/>
+        </scene>
+    </scenes>
+</document>
