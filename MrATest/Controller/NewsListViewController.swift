@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import SafariServices
 
 class NewsListViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITableViewDelegate, UITableViewDataSource {
     
@@ -63,6 +64,14 @@ class NewsListViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         newsCell.newsTitleLabel.text = showAllDataNews[indexPath.row].titleValue
         newsCell.newsDescLabel.text = showAllDataNews[indexPath.row].descValue
         newsCell.newsAuthorLabel.text = showAllDataNews[indexPath.row].authorValue
+        
+        newsCell.cellView.layer.cornerRadius = 15
+        newsCell.cellView.layer.shadowColor = UIColor.black.cgColor
+        newsCell.cellView.layer.shadowOpacity = 0.3
+        newsCell.cellView.layer.shadowRadius = 15
+        newsCell.cellView.layer.shadowOffset = CGSize(width: 0, height: -1)
+        newsCell.newsImage.layer.cornerRadius = 15
+        
 
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
@@ -79,6 +88,8 @@ class NewsListViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
+        let svc = SFSafariViewController(url: URL(string: showAllDataNews[indexPath.row].urlValue)!)
+        self.present(svc, animated: true, completion: nil)
     }
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
