@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4C3ED580ABAB5901BD113E5 /* Pods_MrATest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A20CBC3D6B624C09563029F /* Pods_MrATest.framework */; };
 		E3FFC2CE25620E9900E40AB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FFC2CD25620E9900E40AB1 /* AppDelegate.swift */; };
 		E3FFC2D025620E9900E40AB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FFC2CF25620E9900E40AB1 /* SceneDelegate.swift */; };
 		E3FFC2D225620E9900E40AB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FFC2D125620E9900E40AB1 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A20CBC3D6B624C09563029F /* Pods_MrATest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MrATest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88EE348A8A6879C178640299 /* Pods-MrATest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrATest.release.xcconfig"; path = "Target Support Files/Pods-MrATest/Pods-MrATest.release.xcconfig"; sourceTree = "<group>"; };
+		D1A68B6E38F9274991C6105B /* Pods-MrATest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrATest.debug.xcconfig"; path = "Target Support Files/Pods-MrATest/Pods-MrATest.debug.xcconfig"; sourceTree = "<group>"; };
 		E3FFC2CA25620E9900E40AB1 /* MrATest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MrATest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FFC2CD25620E9900E40AB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3FFC2CF25620E9900E40AB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C3ED580ABAB5901BD113E5 /* Pods_MrATest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B75C3F5E33AC64D656A162F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1A68B6E38F9274991C6105B /* Pods-MrATest.debug.xcconfig */,
+				88EE348A8A6879C178640299 /* Pods-MrATest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF2BA09A41CC5CC5DA93CEDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A20CBC3D6B624C09563029F /* Pods_MrATest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E3FFC2C125620E9900E40AB1 = {
 			isa = PBXGroup;
 			children = (
 				E3FFC2CC25620E9900E40AB1 /* MrATest */,
 				E3FFC2CB25620E9900E40AB1 /* Products */,
+				7B75C3F5E33AC64D656A162F /* Pods */,
+				CF2BA09A41CC5CC5DA93CEDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3FFC2DE25620E9C00E40AB1 /* Build configuration list for PBXNativeTarget "MrATest" */;
 			buildPhases = (
+				FB334834A860D7FDEBD20078 /* [CP] Check Pods Manifest.lock */,
 				E3FFC2C625620E9900E40AB1 /* Sources */,
 				E3FFC2C725620E9900E40AB1 /* Frameworks */,
 				E3FFC2C825620E9900E40AB1 /* Resources */,
+				C81DC24312913D84DE2FD73F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C81DC24312913D84DE2FD73F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MrATest/Pods-MrATest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MrATest/Pods-MrATest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MrATest/Pods-MrATest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB334834A860D7FDEBD20078 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MrATest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E3FFC2C625620E9900E40AB1 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		E3FFC2DF25620E9C00E40AB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1A68B6E38F9274991C6105B /* Pods-MrATest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,6 +373,7 @@
 		};
 		E3FFC2E025620E9C00E40AB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88EE348A8A6879C178640299 /* Pods-MrATest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
