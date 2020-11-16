@@ -39,7 +39,7 @@ class DashboardViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     
     
     @IBAction func findAction(_ sender: Any) {
-//        performSegue(withIdentifier: "", sender: self)
+        performSegue(withIdentifier: "toList", sender: self)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
